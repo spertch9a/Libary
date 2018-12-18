@@ -5,11 +5,24 @@
  */
 package frames;
 
+import frames.newpackage.abonne;
+import frames.newpackage.doctorant1;
+import frames.newpackage.employe1;
+import frames.newpackage.enseignant1;
+import frames.newpackage.etudiant1;
+import frames.newpackage.livre1;
+import frames.newpackage.proceeding;
+import frames.newpackage.revue1;
+
 /**
  *
  * @author Spertch9a
  */
 public class main extends javax.swing.JFrame {
+
+    private static String desktName() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
     /**
      * Creates new form main
@@ -27,52 +40,217 @@ public class main extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jMenuBar2 = new javax.swing.JMenuBar();
+        jMenu3 = new javax.swing.JMenu();
+        jMenu4 = new javax.swing.JMenu();
+        desk = new javax.swing.JDesktopPane();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
+        jMenu2 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
+        jMenuItem4 = new javax.swing.JMenuItem();
+        jMenuItem5 = new javax.swing.JMenuItem();
+        jMenu6 = new javax.swing.JMenu();
+        jMenuItem6 = new javax.swing.JMenuItem();
+        jMenuItem7 = new javax.swing.JMenuItem();
+        jMenuItem8 = new javax.swing.JMenuItem();
+        jMenuItem9 = new javax.swing.JMenuItem();
+
+        jMenu3.setText("File");
+        jMenuBar2.add(jMenu3);
+
+        jMenu4.setText("Edit");
+        jMenuBar2.add(jMenu4);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("nom");
-
-        jLabel2.setText("prenom");
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(72, 72, 72)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel1))
-                .addContainerGap(579, Short.MAX_VALUE))
+        javax.swing.GroupLayout deskLayout = new javax.swing.GroupLayout(desk);
+        desk.setLayout(deskLayout);
+        deskLayout.setHorizontalGroup(
+            deskLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 627, Short.MAX_VALUE)
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(97, 97, 97)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(294, Short.MAX_VALUE))
+        deskLayout.setVerticalGroup(
+            deskLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 390, Short.MAX_VALUE)
         );
+
+        jMenu1.setText("menu");
+
+        jCheckBoxMenuItem1.setSelected(true);
+        jCheckBoxMenuItem1.setText("quitter");
+        jCheckBoxMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBoxMenuItem1ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jCheckBoxMenuItem1);
+
+        jMenuBar1.add(jMenu1);
+
+        jMenu2.setText("abonné");
+        jMenu2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenu2ActionPerformed(evt);
+            }
+        });
+
+        jMenuItem1.setText("abonne");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem1);
+
+        jMenuItem2.setText("etudiant");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem2);
+
+        jMenuItem3.setText("enseignant");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem3);
+
+        jMenuItem4.setText("employe");
+        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem4ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem4);
+
+        jMenuItem5.setText("doctorant");
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem5);
+
+        jMenuBar1.add(jMenu2);
+
+        jMenu6.setText("document");
+
+        jMenuItem6.setText("document");
+        jMenu6.add(jMenuItem6);
+
+        jMenuItem7.setText("revue");
+        jMenuItem7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem7ActionPerformed(evt);
+            }
+        });
+        jMenu6.add(jMenuItem7);
+
+        jMenuItem8.setText("livre");
+        jMenuItem8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem8ActionPerformed(evt);
+            }
+        });
+        jMenu6.add(jMenuItem8);
+
+        jMenuItem9.setText("proceeding");
+        jMenuItem9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem9ActionPerformed(evt);
+            }
+        });
+        jMenu6.add(jMenuItem9);
+
+        jMenuBar1.add(jMenu6);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(desk)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(desk, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(27, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jCheckBoxMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxMenuItem1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBoxMenuItem1ActionPerformed
+ abonne abn = new abonne();
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        abonne abn = new abonne();
+        System.out.println("tmecha");
+        desk.add(abn);
+        System.out.println("tmecha2");
+        abn.setVisible(true);
+        System.out.println("tmecha3");
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jMenu2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenu2ActionPerformed
+
+    private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
+       revue1 r =  new revue1();
+       desk.add(r);
+       r.setVisible(true);
+    }//GEN-LAST:event_jMenuItem7ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+       etudiant1 e = new etudiant1();
+       desk.add(e);
+       e.setVisible(true);
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        enseignant1 e = new enseignant1();
+        desk.add(e);
+        e.setVisible(true);
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+       employe1 e = new employe1();
+       desk.add(e);
+       e.setVisible(true);
+    }//GEN-LAST:event_jMenuItem4ActionPerformed
+
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+       doctorant1 d = new doctorant1();
+       desk.add(d);
+       d.setVisible(true);
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
+
+    private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
+      livre1 l = new livre1();
+       desk.add(l);
+       l.setVisible(true);
+    }//GEN-LAST:event_jMenuItem8ActionPerformed
+
+    private void jMenuItem9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem9ActionPerformed
+        proceeding p = new proceeding();
+        desk.add(p);
+        p.setVisible(true);
+    }//GEN-LAST:event_jMenuItem9ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -95,7 +273,7 @@ public class main extends javax.swing.JFrame {
         } catch (InstantiationException ex) {
             java.util.logging.Logger.getLogger(main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(desktName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(main.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
@@ -110,8 +288,23 @@ public class main extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JPanel jPanel1;
+    public javax.swing.JDesktopPane desk;
+    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenu jMenu6;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuBar jMenuBar2;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JMenuItem jMenuItem6;
+    private javax.swing.JMenuItem jMenuItem7;
+    private javax.swing.JMenuItem jMenuItem8;
+    private javax.swing.JMenuItem jMenuItem9;
     // End of variables declaration//GEN-END:variables
 }

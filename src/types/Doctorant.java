@@ -14,6 +14,10 @@ public class Doctorant extends Etudiant{
     String thémedethése;
     int annéeinscriptionthése;
     Enseignant directeurdethése;
+
+    public Doctorant(int ninscription, String specialité, String nom, String prenom, String adresse) {
+        super(ninscription, specialité, nom, prenom, adresse);
+    }
     void afficherParDirecteurDeThése(){
         
     }

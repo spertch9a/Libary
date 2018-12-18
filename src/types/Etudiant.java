@@ -16,4 +16,11 @@ public class Etudiant extends Abonné{
     void afficherParSpecialité(){
         
     }
+
+    public Etudiant(int ninscription, String specialité, String nom, String prenom, String adresse) {
+        super(nom, prenom, adresse);
+        this.ninscription = ninscription;
+        this.specialité = specialité;
+    }
+    
 }
